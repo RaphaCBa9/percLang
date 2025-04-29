@@ -1,8 +1,8 @@
-# 🥛 PercLang - Uma Linguagem de Programação para Arranjos de Percussão
+# Uma Linguagem de Programação para Arranjos de Percussão
 
-## 📚 Descrição Geral
+## Descrição Geral
 
-**PercLang** é uma linguagem de programação criada para transformar estruturas simples de código em arranjos de percussão.
+Este projeto é uma linguagem de programação criada para transformar estruturas simples de código em arranjos de percussão.
 
 O objetivo é permitir que músicos, programadores ou interessados possam descrever sequências ríticas de maneira simples, utilizando toques (`D`, `E`, `pausa`) e rudimentos tradicionais da bateria, com suporte a loops e controle de tempo (BPM).
 
@@ -19,7 +19,7 @@ Cada programa escrito em PercLang é interpretado e gera como saída um arquivo 
 
 ---
 
-## 📝 Sintaxe — Exemplo de Programa PercLang
+## Sintaxe — Exemplo de Programa
 
 ```text
 tempo 120 {
@@ -29,7 +29,7 @@ tempo 120 {
 }
 ```
 
-**Saída gerada (`.txt`):**
+**Proposta de saída gerada (`.txt`):**
 
 ```text
 120bpm: | D E D D E D E E | D E D D E D E E | D E D D E D E E | D E D D E D E E |
@@ -58,59 +58,4 @@ numero        = dígito { dígito } ;
 
 dígito        = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 ```
-
----
-
-## 🔥 Rudimentos Disponíveis
-
-| Rudimento | Expansão (exemplo) |
-|:---|:---|
-| paradiddle | D E D D E D E E |
-| flam | D |
-| doubleStroke | D D E E |
-| singleStroke | D E D E |
-| drag | D E D |
-| roll | D D D D E E E E |
-
-*(Novos rudimentos podem ser facilmente adicionados.)*
-
----
-
-## 📦 Estrutura de Pastas Sugerida
-
-```
-PercLang/
-├── src/
-│   ├── lexer.l       # Analisador Léxico (Flex)
-│   ├── parser.y      # Analisador Sintático (Bison)
-│   └── main.cpp      # Interpretador e Gerador de Saída
-├── examples/
-│   └── sample.perc   # Exemplo de programa PercLang
-├── README.md
-├── Makefile          # (opcional) Para facilitar build
-└── output/
-    └── result.txt    # Arquivo gerado pela execução
-```
-
----
-
-## 🚀 Tecnologias Utilizadas
-- **Flex** — Analisador Léxico
-- **Bison** — Analisador Sintático
-- **C++** — Interpretador e Gerador de Saída
-
----
-
-## 📈 Status Atual
-
-- [x] Definição da EBNF
-- [ ] Implementação do Analisador Léxico
-- [ ] Implementação do Analisador Sintático
-- [ ] Construção do Interpretador
-- [ ] Criação de Exemplos de Programas
-- [ ] Finalização da Documentação
-
----
-
-# 🎵 Let's groove!
 
